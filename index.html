@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&family=Raleway:wght@100&family=Roboto+Condensed:ital,wght@0,300;0,400;1,300&family=Roboto:wght@100;300&family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d7625ae525.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header">
+        <p class="logo">Shopping Cart</p>
+        <div class="cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <p id="count">0</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="items" id="item-list">
+            <!-- Items will be dynamically generated here -->
+        </div>
+        <div class="sidebar">
+            <div class="head"><p>My Cart</p></div>
+            <!-- <div id="cartItem">Your cart is empty</div> -->
+        <div class="cart-summary">
+            <h2>Cart Summary</h2>
+            <ul id="cart-items" class="cart-item">
+                <!-- Cart items will be displayed here -->
+            </ul>
+            <p>Total: $<span id="cart-total">0.00</span></p>
+        </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
